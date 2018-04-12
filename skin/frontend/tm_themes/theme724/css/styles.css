@@ -1241,4 +1241,4 @@ body:not(.customer-account) .block:first-child .block-title{
     height: 50px !important;
     background: #fff !important;
     width: 590px !important;
-    bottom: 10px !important;padding:10px 15px !important;border-top:1px solid #ddd !important;}
+    /*bottom: 10px !important;*/padding:10px 15px !important;border-top:1px solid #ddd !important;}
