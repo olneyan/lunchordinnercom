@@ -13,6 +13,7 @@ $vendor = $this->getVendor();
 
 
 <?php if (Mage::helper('csmarketplace/acl')->isEnabled()) { ?>
+<<<<<<< HEAD
     <?php
     $venId = $this->getVendor()->getId();
     $vendortime = Mage::getModel('csmarketplace/vendor')->load($venId)->toArray();
@@ -127,6 +128,31 @@ $vendor = $this->getVendor();
 
     $diff1 = strtotime($timeNdate) - strtotime($formatedOpeningTime);
     $diff2 = strtotime($formatedClosingTime) - strtotime($timeNdate);
+=======
+
+
+    <?php
+    $day = Mage::getSingleton('core/date')->date('w');
+    $days = [0 => 'Sun', 1 => 'Mon', 2 => 'Tue', 3 => 'Wed', 4 => 'Thu', 5 => 'Fri', 6 => 'Sat'];
+    $methodOpenTime = "get{$days[$day]}OpenTime";
+    $methodCloseTime = "get{$days[$day]}OpenTime";
+    $Openvalue = str_replace(',', ':', $this->$methodOpenTime());
+    $Closevalue = str_replace(',', ':', $this->$methodCloseTime());
+    $todayPrefix = date("Y-m-d", Mage::getModel('core/date')->timestamp(now()));
+    $openingAt = intval(substr($Openvalue, 0, 2));
+    $closingAt = intval(substr($Closevalue, 0, 2));
+    $diff = $closingAt - $openingAt;
+    if ($diff <= 0) {
+        $Closevalue = date("Y-m-d h:i:s", strtotime($todayPrefix . " " . $Closevalue)) . " +24 hour";
+    } else {
+        $Closevalue = date("Y-m-d h:i:s", strtotime($todayPrefix . " " . $Closevalue));
+    }
+    $formatedOpeningTime = date('Y-m-d H:i:s', strtotime($todayPrefix . " " . $Openvalue));
+    $formatedClosingTime = date('Y-m-d H:i:s', strtotime($Closevalue));
+    $now = Mage::getModel('core/date')->timestamp(now());
+    $diff1 = strtotime(date("Y-m-d H:i:s", $now)) - strtotime($formatedOpeningTime);
+    $diff2 = strtotime($formatedClosingTime) - strtotime(date("Y-m-d H:i:s", $now));
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
     $isOpen = ( ($diff1 >= 0) && ($diff2 >= 0) ) ? "OPEN" : "CLOSED";
 //    echo date('Y-m-d H:i:s', $now);
     ?>
@@ -144,8 +170,13 @@ $vendor = $this->getVendor();
             <?php } ?>
         </p>
 
+<<<<<<< HEAD
        <p>
            <span style="font-weight: bold; color: <?php
+=======
+        <p>
+           <!-- <span style="font-weight: bold; color: <?php
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
             if ($isOpen === 'OPEN') {
                 echo 'green';
             } else {
@@ -154,11 +185,16 @@ $vendor = $this->getVendor();
             ?>">
                 Now <?php echo $isOpen; ?>
             </span>
+<<<<<<< HEAD
             &nbsp;&nbsp;|&nbsp;&nbsp;
+=======
+            &nbsp;&nbsp;|&nbsp;&nbsp;  -->
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
             <?php echo Mage::helper('core')->currency($vendor->getData('delivery_fee'), true, false) ?> Delivery
         </p>
     </div>
 
+<<<<<<< HEAD
    <div class="seller_info">
         <div style="line-height: 0;" class="col-sm-12 col-md-6">
             <p class="row pull-left">
@@ -167,6 +203,15 @@ $vendor = $this->getVendor();
         </div>
         <div style="line-height: 0" class="col-sm-12 col-md-6">
             <p class="row pull-right pull-small">
+=======
+    <div style="background-color: #000; color: #fff; padding: 15px; border-radius: 3px;">
+        <div style="line-height: 0;" class="col-sm-12 col-md-6">
+            <p class="row pull-left">
+                Minimum <?php echo Mage::helper('core')->currency($vendor->getData('min_freeship'), true, false) ?></p>
+        </div>
+        <div style="line-height: 0" class="col-sm-12 col-md-6">
+            <p class="row pull-right">
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
                 Estimated Delivery: <?php echo $this->escapeHtml($vendor->getData('delivery_time')) ?> minutes
             </p>
         </div>
@@ -486,7 +531,11 @@ echo $this->getUrl('checkout/onepage/', [
                     var intervalSuccessAddToCart = setInterval(function () {
                         jQuery('.success-add-to-cart .close').click();
                         clearInterval(intervalSuccessAddToCart);
+<<<<<<< HEAD
                     }, 500);
+=======
+                    }, 2000);
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
 
 
                     var minicartOptions = {
@@ -506,7 +555,11 @@ echo $this->getUrl('checkout/onepage/', [
 
                     jQuery("#top").removeClass('fancybox-margin fancybox-lock');
 
+<<<<<<< HEAD
                     jQuery('#msg').delay(500).fadeOut();
+=======
+                    jQuery('#msg').delay(6000).fadeOut();
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
                     jQuery(".btn-cart").attr("onclick", 'fun(this.id);');
 
                     jQuery(".block-cart-inner").html(data.cart_sidebar);
@@ -520,7 +573,11 @@ echo $this->getUrl('checkout/onepage/', [
                     jQuery('#header').after('<ul id="msg" class="messages"><li class="error-msg"><ul><li><span>' + data.message + '</span></li></ul></li></ul>');
                     jQuery(".fancybox-overlay").remove();
                     jQuery("#top").removeClass('fancybox-margin fancybox-lock');
+<<<<<<< HEAD
                     jQuery('#msg').delay(500).fadeOut();
+=======
+                    jQuery('#msg').delay(6000).fadeOut();
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
                     jQuery(".btn-cart").attr("onclick", 'fun(this.id);');
                     //   loader.delay( 3000 ).remove();
 
@@ -533,7 +590,11 @@ echo $this->getUrl('checkout/onepage/', [
                 jQuery('#header').after('<ul id="msg" class="messages"><li class="error-msg"><ul><li><span>' + data.message + '</span></li></ul></li></ul>');
                 jQuery(".fancybox-overlay").remove();
                 jQuery("#top").removeClass('fancybox-margin fancybox-lock');
+<<<<<<< HEAD
                 jQuery('#msg').delay(500).fadeOut();
+=======
+                jQuery('#msg').delay(1000).fadeOut();
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
                 jQuery(".btn-cart").attr("onclick", 'fun(this.id);');
                 //loader.delay( 3000 ).remove();
             }

@@ -263,7 +263,10 @@ abstract class Mage_Eav_Model_Entity_Collection_Abstract extends Varien_Data_Col
             throw Mage::exception('Mage_Eav', Mage::helper('eav')->__('Attempt to add an invalid object'));
         }
         return parent::addItem($object);
+<<<<<<< HEAD
         //{ return parent::addItem($object); } catch (Exception $ex) { }
+=======
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
     }
 
     /**

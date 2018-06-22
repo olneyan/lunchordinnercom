@@ -34,8 +34,11 @@
 #    #php_value memory_limit 64M
     php_value memory_limit 256M
     php_value max_execution_time 999999
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
 ############################################
 ## disable magic quotes for php request vars
 
@@ -116,9 +119,12 @@
 
     Options +SymLinksIfOwnerMatch
     RewriteEngine on
+<<<<<<< HEAD
 
     RewriteCond %{HTTP_HOST} ^www\.lunchordinners\.com$
     RewriteRule ^/?$ "http\:\/\/lunchordinners\.com\/" [R=301,L]
+=======
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
 	
 	RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
 	RewriteRule .* ? [F,L]

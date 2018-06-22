@@ -24,6 +24,7 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+<<<<<<< HEAD
 <style>
 .footericon{
     width: 18%;
@@ -36,6 +37,8 @@
 }
 }
 </style>
+=======
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
 <?php //echo $this->getChildHtml('ced_hssocialmedia_index');   ?>
 <div class="footer-container">
     <div class="container">
@@ -88,6 +91,11 @@
                                     </p>
                                     <?php echo $this->getChildHtml('footer.newsletter'); ?>
                                 </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
                                 <?php //echo $this->getChildHtml('tm_facebook_like_footer') ?>
                                 <?php //echo $this->getChildHtml('tm_instagram_user') ?>
                                 <?php // echo $this->getChildHtml('paypal.partner.right.logo'); ?>
@@ -98,6 +106,7 @@
 
                     <div class="bottom-footer">
                         <?php echo $this->getChildHtml('footer_list') ?>
+<<<<<<< HEAD
                         
                         
                         <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('facebook_fanbox')->toHtml() ?>
@@ -120,23 +129,41 @@
                             </div>
                         </div>
                     </address>
+=======
+                        <?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('facebook_fanbox')->toHtml() ?>
+                    </div>
+                    <address><?php echo '© Copyright ' . date("Y"). '. lunchordinner All Rights Reserved'; ?></address>
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
                     <?php echo $this->getChildHtml('store_switcher') ?>
                     <?php
                     $current_page = Mage::app()->getFrontController()->getRequest()->getRouteName();
                     if ($current_page == 'cms'):
                     //echo 'More Magento Food Store Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/food-store-magento-themes/" target="_blank">TemplateMonster.com</a>';
+<<<<<<< HEAD
                         endif;
+=======
+                    endif;
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
                     ?>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
 <script type="text/javascript">
     jQuery(document).ready(function () {
         var ww = jQuery(window).width();
         if (ww < 768) {
             jQuery('.footer-col-content').css('display', 'none');
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
             jQuery('.footer h4').on('click', function (e) {
                 jQuery(this).toggleClass('active');
                 if (jQuery(this).siblings('.footer-col-content').hasClass('open')) {
@@ -149,10 +176,19 @@
                 }
             });
         }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
         jQuery(window).resize(function () {
             footersocialshare();
         });
         footersocialshare();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
     });
     function footersocialshare() {
         var ww1 = jQuery(window).width();
@@ -161,6 +197,10 @@
         }
     }
 </script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
 <!-- script to remove fix-me and fix-me-two class when footer comes-->
 <script type="text/javascript">
     var remfix = jQuery('.footer-container').offset().top; //initial position from top

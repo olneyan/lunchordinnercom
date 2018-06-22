@@ -286,10 +286,17 @@ $height = $height ? $height : 200;
                     </li> -->
 
                     <li class="rating"><?php echo __('Rating'); ?><span class="value"> <?php echo $this->getReviewsSummaryHtml($vendor); ?></span> </li>
+<<<<<<< HEAD
                     <li class="min_amount"><?php echo __('Minimum Order Value'); ?><span class="value"> <?php
                 if ($vendor->getMinOrderAmount()) {
                     echo Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol();
                 }echo Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol() . $vendor->getMinFreeship();
+=======
+                    <li class="min_amount"><?php echo __('Minimum delivery order'); ?><span class="value"> <?php
+                if ($vendor->getMinOrderAmount()) {
+                    echo Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol();
+                }echo $vendor->getMinFreeship();
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
             ?></li>
                     <li class="wait_time"><?php echo __('Wait Time'); ?><span class="value"> <?php echo $vendor->getDeliveryTime(); ?></li>
                     <li class="delivery">

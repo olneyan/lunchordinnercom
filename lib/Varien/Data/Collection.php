@@ -370,7 +370,11 @@ class Varien_Data_Collection implements IteratorAggregate, Countable
 
         if (!is_null($itemId)) {
             if (isset($this->_items[$itemId])) {
+<<<<<<< HEAD
                 //throw new Exception('Item ('.get_class($item).') with the same id "'.$item->getId().'" already exist');
+=======
+                throw new Exception('Item ('.get_class($item).') with the same id "'.$item->getId().'" already exist');
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
             }
             $this->_items[$itemId] = $item;
         } else {

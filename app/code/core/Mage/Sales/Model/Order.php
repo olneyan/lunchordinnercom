@@ -1450,7 +1450,11 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
             ->setEntityType(self::ENTITY)
             ->setEventType(self::EMAIL_EVENT_NAME_UPDATE_ORDER)
             ->setIsForceCheck(!$forceMode);
+<<<<<<< HEAD
        //$mailer->setQueue($emailQueue)->send();
+=======
+       // $mailer->setQueue($emailQueue)->send();
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
         $mailer->send();
 
         return $this;

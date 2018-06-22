@@ -1,0 +1,14 @@
+[19-Mar-2018 19:09:37 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:09:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/stage_1.php on line 15
+[19-Mar-2018 19:09:41 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:09:41 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:17:32 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:18:53 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:18:58 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:18:58 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:20:59 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:21:00 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:50:32 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[19-Mar-2018 19:50:32 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/stage_1.php on line 15
+[21-Mar-2018 19:55:00 UTC] PHP Notice:  Undefined variable: version in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/index.php on line 14
+[21-Mar-2018 19:55:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/aather/public_html/lunchordinners.com/super-loader/web/installation/stage_1.php on line 15

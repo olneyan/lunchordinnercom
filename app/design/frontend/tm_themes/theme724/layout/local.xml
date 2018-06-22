@@ -117,7 +117,11 @@
             <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10</position><liParams/><aParams>class="my-account-link"</aParams></action>
             
             <action method="removeLinkByUrl"><url helper="customer/getRegisterUrl"/></action>
+<<<<<<< HEAD
             <action method="addLink" translate="label title before_text" module="customer"><label>Create an account</label><url helper="customer/getRegisterUrl" /><title>Create an account</title><prepare/><urlParams/><position>100</position><li/><aParams>class="register-link"</aParams></action>
+=======
+            <action method="addLink" translate="label title before_text" module="customer"><label>Register</label><url helper="customer/getRegisterUrl" /><title>Register</title><prepare/><urlParams/><position>100</position><li/><aParams>class="register-link"</aParams></action>
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
         </reference>
 
         <reference name="wishlist_link">
@@ -333,5 +337,12 @@
         </reference>
     </csmarketplace_vshops_view>
 
+<<<<<<< HEAD
+=======
+
+
+   
+  
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
 </layout> 
 

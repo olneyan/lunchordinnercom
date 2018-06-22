@@ -2157,6 +2157,7 @@ Stack trace:
 #2 /home/aather/public_html/lunchordinners.com/app/code/core/Mage/Core/Model/Layout.php(472): Ced_CsMarketplace_Model_Layout->createBlock('catalog/product...', 'product.info')
 #3 /home/aather/public_html/lunchordinners.com/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('catalog/product...', 'product.info')
 #4 /home/aather/public_html/lunchordinners.com/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(M in /home/aather/public_html/lunchordinners.com/app/code/core/Mage/Catalog/Block/Product/View.php on line 56
+<<<<<<< HEAD
 [12-Apr-2018 10:00:30 UTC] PHP Fatal error:  Uncaught Exception: File '/home/aather/public_html/lunchordinners.com/media/catalog/product/' does not exists. in /home/aather/public_html/lunchordinners.com/lib/Varien/File/Transfer/Adapter/Http.php:96
 Stack trace:
 #0 /home/aather/public_html/lunchordinners.com/get.php(205): Varien_File_Transfer_Adapter_Http->send('/home/aather/pu...')
@@ -2721,3 +2722,5 @@ Stack trace:
 [19-Jun-2018 10:35:47 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/aather/public_html/lunchordinners.com/app/design/frontend/tm_themes/theme724/template/homepage/chinese.phtml on line 283
 [21-Jun-2018 12:39:50 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/aather/public_html/lunchordinners.com/app/code/local/Ced/CsMarketplace/controllers/VshopsController.php on line 84
 [21-Jun-2018 12:40:09 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/aather/public_html/lunchordinners.com/app/code/local/Ced/CsMarketplace/controllers/VshopsController.php on line 84
+=======
+>>>>>>> 8d9d3a296811c0989875d4602b8b70be78954059
